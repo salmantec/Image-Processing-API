@@ -8,7 +8,7 @@ import imageProcessor from './api/imageProcessor';
 const routes = express.Router();
 
 // Master (Mock) route to check the express application
-routes.get('/', (req: express.Request, res: express.Response) => {
+routes.get('/', (req: express.Request, res: express.Response): void => {
   res.send('Main api route');
 });
 
